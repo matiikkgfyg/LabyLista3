@@ -1,0 +1,27 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // zad2
+        Console.Write("Podaj n: ");
+        int n = Convert.ToInt32(Console.ReadLine());
+
+        int[] tablica = new int[n];
+
+        for (int i = 0; i < n; i++)
+        {
+            Console.Write("Podaj liczbe: ");
+            tablica[i] = Convert.ToInt32(Console.ReadLine());
+        }
+        // zad3
+        foreach (int liczba in tablica)
+        {
+            if (liczba % 2 == 0)
+            {
+                Console.WriteLine(liczba);
+            }
+        }
+    }
+}
