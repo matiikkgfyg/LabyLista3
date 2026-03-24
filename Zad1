@@ -1,0 +1,20 @@
+using System;
+using System.Collections.Generic;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("ZADANIE 1");
+        List<string> imiona = new List<string> 
+        { 
+            "Ola", "Mateusz", "Marek", "Klaudia", "Dawid", 
+            "Jakub", "Tomasz", "Piotrek", "Krzysztof", "Sebastian" 
+        };
+        Console.WriteLine("Imiona od ostatniego do pierwszego");
+        for (int i = imiona.Count - 1; i >= 0; i--)
+        {
+            Console.WriteLine(imiona[i]);
+        }
+    }
+}
