@@ -1,0 +1,20 @@
+using System;
+using System.Collections.Generic;
+
+class Program
+{
+    static void Main()
+    {
+        Dictionary<string, int> numery = new Dictionary<string, int>();
+        numery.Add("Policja", 997);
+        numery.Add("Straz pozarna", 998);
+        numery.Add("Pogotowie", 999);
+        numery.Add("Numer alarmowy", 112);
+        numery.Add("Pogotowie gazowe", 992);
+
+        foreach (KeyValuePair<string, int> pair in numery)
+        {
+            Console.WriteLine("{0}: {1}", pair.Key, pair.Value);
+        }
+    }
+}
