@@ -12,9 +12,9 @@ class Program
         numery.Add("Numer alarmowy", 112);
         numery.Add("Pogotowie gazowe", 992);
 
-        foreach (KeyValuePair<string, int> pair in numery)
+        foreach (var pair in numery)
         {
-            Console.WriteLine("{0}: {1}", pair.Key, pair.Value);
+            Console.WriteLine(pair);
         }
     }
 }
